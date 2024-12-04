@@ -1,0 +1,29 @@
+# config.yaml
+symbols:
+  - BTC_USD
+  - ETH_USD
+
+symbol_mappings:
+  binance:
+    BTC_USD: "btcusdt"
+    ETH_USD: "ethusdt"
+  bitstamp:
+    BTC_USD: "btcusd"
+    ETH_USD: "ethusd"
+
+exchanges:
+  binance:
+    depth_level: 20
+    upload_speed: 100
+    terminal_callback: false
+  bitstamp:
+    depth_level: 20
+    terminal_callback: false
+
+redis:
+  host: "localhost"
+  port: 6379
+  db: 0
+
+collection:
+  duration_seconds: 604800  # 1 week in seconds
